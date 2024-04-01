@@ -1,0 +1,125 @@
+:root{
+    --main-tan:#E5DCCF;
+    --dark-purple:#3D0753;
+    --main-pink:#910A67;
+}
+html{
+    margin: 0;
+    padding: 0%;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+/**********nav**********/
+#menu{
+    list-style-type: none;
+    display: flex;
+    gap: 1.25rem;
+    justify-content: start;
+}
+#menu a{
+    text-decoration: none;
+    color: black;
+    font-family: "main";
+    gap: 1.25rem;
+}
+#menu li{
+    margin-top: 2.25rem;
+    font-size: larger;
+    margin-left: .625rem;
+}
+#menu a:hover{
+    transition: 0.5ms;
+    color: var(--main-pink);
+}
+#menu-toggle{
+    display: none;
+    background-color: var(--blue);
+    border: none;
+    
+}
+#menu.active{
+    display: flex;
+    }
+nav{
+    background-color: var(--main-tan);
+    height: 10vh;
+}
+.logo img{
+   height: 10vh;
+}
+
+
+
+    /**********hero*************/
+.hero{
+    background-image: url(/img/header-img.png);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    position: relative;
+    
+}
+.text{
+    margin-left: 5.5rem;
+    bottom: 30%;
+    position: absolute;
+}
+.text p{
+    font-size: 18pt;
+}
+.text h1{
+    font-size: 25pt;
+}
+.button-hero{
+  background-color: var(--dark-purple);
+  padding: .625rem;
+  color: white;
+  box-shadow: 3px 4px 3px 3px rgb(56, 56, 56);
+  text-align: center;
+}
+
+
+
+@media  screen and (max-width: 43.75rem) {
+    /**********nav**********/
+#menu-toggle{
+    display: block;
+    position: fixed;
+    z-index: 100000;
+    padding: 0.60rem;
+    border-radius: .25rem;
+}
+#menu{
+    display: none; 
+    position: fixed;
+    z-index: 100000;
+    flex-direction: column;
+    background-color: var(--main-tan);
+    border-radius: .625rem;
+    justify-content: start;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    background-color: var(--main-tan);
+    
+}
+nav a{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.hero{
+    height: 90vh;
+    background-position: top;
+}
+.text{
+    margin: 0;
+    top: .0625rem;
+    text-align: center;
+}
+.text p{
+    font-size: 14pt;
+}
+}
