@@ -77,6 +77,84 @@ nav{
   box-shadow: 3px 4px 3px 3px rgb(56, 56, 56);
   text-align: center;
 }
+/**********shoes**********/
+.shoes{
+    background-image: url(/img/shoes-img.png);
+    height: 60vh;
+    background-position: center;
+}
+.shoes h3{
+    font-size: 25pt;
+    justify-content: center;
+    text-align: left;
+    padding: 1.25rem;
+    padding-left: 17.875rem;
+    color: white;
+}
+.btn-shoes{
+    background-color: var(--main-pink);
+    padding: .625rem;
+    color: white;
+    box-shadow: 3px 4px 3px 3px rgb(56, 56, 56);
+    text-align: center;
+    width: 9rem;
+}
+/**********email**********/
+.email{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 30vh;
+    padding: .625rem;
+}
+.sign-up{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.form{
+    align-items: center;
+    text-align: center;
+}
+.input{
+    width: 5rem;
+}
+.submit-btn{
+    background-color: var(--dark-purple);
+    padding: .625rem;
+    color: white;
+    box-shadow: 3px 4px 3px 3px rgb(56, 56, 56);
+    text-align: center;
+    width: 9rem;
+    border-radius: 1.25rem;
+}
+/**********footer**********/
+.footer{
+    background-image: linear-gradient(180deg,#910A67, #3D0753);
+    padding: 0.25rem;
+    color: white;
+}
+.footer p{
+    color: white;
+    text-align: left;
+    margin-left: 2.125rem;
+    font-size: smaller;
+}
+.footer a{
+    color: white;
+}
+/**********place4content**********/
+.place-for-content{
+    height: 90vh;
+}
+.img-div{
+    height: 50vh;
+}
+
+
+
+
+
+
 
 
 
@@ -122,4 +200,25 @@ nav a{
 .text p{
     font-size: 14pt;
 }
+ /**********shoes**********/
+ .shoes{
+    height: 70vh;
+ }
+ .shoes h3{
+    margin: 0;
+    padding: .625rem;
+    text-align: center;
+ }
+ .btn-shoes{
+    margin: .625rem;
+    text-align: center;
+ }
+ /**********email**********/
+ .email{
+    grid-template-columns: 1fr;
+    padding: .625rem;
+ }
+ .footer{
+    display: none;
+ }
 }
