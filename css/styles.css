@@ -9,18 +9,25 @@ html{
     scroll-behavior: smooth;
     width: 100%;
 }
+
 /**********nav**********/
 #menu{
     list-style-type: none;
     display: flex;
     gap: 1.25rem;
     justify-content: start;
+    position: fixed;
+    z-index: 10000;
+    background-color: var(--main-tan);
+    width: 100%;
+    margin-top: 0;
 }
 #menu a{
     text-decoration: none;
     color: black;
     font-family: "main";
     gap: 1.25rem;
+    position: relative;
 }
 #menu li{
     margin-top: 2.25rem;
@@ -43,6 +50,8 @@ html{
 nav{
     background-color: var(--main-tan);
     height: 10vh;
+    position: fixed;
+    z-index: 100000;
 }
 .logo img{
    height: 10vh;
@@ -98,7 +107,9 @@ nav{
     box-shadow: 3px 4px 3px 3px rgb(56, 56, 56);
     text-align: center;
     width: 9rem;
+    margin: auto;
 }
+
 /**********email**********/
 .email{
     display: grid;
@@ -127,6 +138,7 @@ nav{
     width: 9rem;
     border-radius: 1.25rem;
 }
+
 /**********footer**********/
 .footer{
     background-image: linear-gradient(180deg,#910A67, #3D0753);
@@ -142,13 +154,149 @@ nav{
 .footer a{
     color: white;
 }
+
+
+
 /**********place4content**********/
-.place-for-content{
-    height: 90vh;
+.entry-div{
+    padding: 1.25rem;
+    color: black;
+    height: 100%;
+    padding: 1.25rem;
+    position: relative;
+    padding: 1.25rem;
 }
+
 .img-div{
-    height: 50vh;
+position: relative; 
 }
+.img-div :hover{
+    box-shadow: 3px 2px 3px .25rem rgb(68, 67, 67);
+    cursor: pointer;
+}
+.text-div :hover{
+    color: var(--main-pink);
+    transition: 0.3ms;
+    cursor: pointer;
+}
+.img-div img{
+    width: 100%;
+    justify-content: left;
+    padding: .125rem;
+}
+.place-for-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.text-div{
+ position: absolute;
+ bottom: 10%;
+ left: 2.25rem;
+ color: white;
+ text-shadow: 3px 2px 3px  rgb(68, 67, 67);
+}
+ /**********details**********/
+.details{
+    padding-top: 5.25rem;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img-div2{
+  justify-content: center;
+  align-items: right;
+  width: 100%;
+  margin-left: 6.625rem;
+}
+.text-div2 h1{
+    font-size: 55pt;
+}
+.text-div2 p{
+    margin-top: 0;
+}
+.text-div2 p{
+    width: 30.5rem;
+}
+.text-div2 h2{
+    background-color: var(--main-pink);
+    padding: .625rem;
+    color: white;
+    box-shadow: 3px 4px 3px 3px rgb(56, 56, 56);
+    text-align: center;
+    width: 9rem;
+    border-radius: 1.25rem;
+}
+.text-div2 a :hover{
+     background-color: var(--dark-purple);
+     transition: 0.25ms;
+     color: var(--main-pink);
+     box-shadow: 3px 0px 1px 2px rgb(56, 56, 56);
+}
+.text-div2 a{
+    text-decoration: none;
+}
+.more-text{
+    text-align: center;
+}
+.more{
+    height: 70rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 7.25rem;
+    margin: .0625rem;
+    align-items: center;
+    justify-content: center;
+}
+.img-more img{
+    width: 100%;
+    border-radius: 1.25rem;
+   
+}
+/**********cart**********/
+.cart-info{
+    padding-top: 7.25rem;
+    height: 35vh;
+    position: relative;
+}
+.cart-content{
+    display: flex;
+    flex-direction: row;
+    column-gap: .0625rem;
+    height: 35vh;
+    justify-content: center;
+   align-items: center;
+   
+}
+.cart-content img{
+    height: 100%;
+}
+.cart-content h1{
+    font-size: 30pt;
+   margin-left: 1rem;
+}
+.cart-details{
+    height: 45vh;
+}
+.cart-details{
+    text-align: center;
+}
+.cart-btn{
+    background-color: var(--main-pink);
+    padding: .625rem;
+    color: white;
+    box-shadow: 3px 4px 3px 3px rgb(56, 56, 56);
+    text-align: center;
+    border-radius: 1.25rem;
+}
+.cart-btn :hover{
+    cursor: pointer;
+    background-color: var(--dark-purple);
+     transition: 0.25ms;
+     color: var(--main-pink);
+     box-shadow: 3px 0px 1px 2px rgb(56, 56, 56);
+}
+
 
 
 
@@ -160,6 +308,12 @@ nav{
 
 @media  screen and (max-width: 43.75rem) {
     /**********nav**********/
+    html{
+        max-width: 43.75rem;
+    }
+body{
+    padding: 0.25rem;
+}
 #menu-toggle{
     display: block;
     position: fixed;
@@ -178,6 +332,7 @@ nav{
     text-align: center;
     align-items: center;
     justify-content: center;
+    width: 50%;
 }
 nav{
     background-color: var(--main-tan);
@@ -200,6 +355,10 @@ nav a{
 .text p{
     font-size: 14pt;
 }
+.button-hero{
+    width: 80%;
+    text-align: center;
+}
  /**********shoes**********/
  .shoes{
     height: 70vh;
@@ -208,6 +367,7 @@ nav a{
     margin: 0;
     padding: .625rem;
     text-align: center;
+    font-size: medium;
  }
  .btn-shoes{
     margin: .625rem;
@@ -220,5 +380,61 @@ nav a{
  }
  .footer{
     display: none;
+ }
+ /**********content**********/
+ .place-for-content{
+    grid-template-columns: 1fr;
+ }
+ .text-div{
+    margin-left: 0;
+    margin-bottom: 0;
+    text-align: left;
+    align-items: center;
+ }
+ .text-div p{
+    padding: 1.25rem;
+ }
+ .entry-div{
+    margin: 0;
+    padding: .625rem;
+ }
+ /**********details**********/
+ .details{
+    grid-template-columns: 1fr;
+    height: 110vh;
+    padding: 0;
+    padding-bottom: 1.25rem;
+ }
+ .img-div2{
+    margin: 0;
+   padding: .0313rem;
+   align-items: center;
+ }
+ .img-div2 img{
+    width: 100%;
+ }
+ .text-div2{
+    text-align: center;
+    padding: .625rem;
+ }
+ .text-div2 h1{
+   font-size: 30pt;
+ }
+ .text-div2 p{
+    font-size: small;
+    width: 15.375rem;
+    text-align: center;
+ }
+ .text-div2 h2{
+    text-align: center;
+    width: 80%;
+    padding: .625rem;
+ }
+ .more{
+    grid-template-columns: 1fr 1fr;
+    padding: 1.3125rem;
+    margin: 0;
+    height: 90vh;
+
  }
 }
