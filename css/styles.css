@@ -61,7 +61,7 @@ nav{
 
     /**********hero*************/
 .hero{
-    background-image: url(/img/header-img.png);
+    background-image: url(.../img/header-img.png);
     background-size: cover;
     background-position: center;
     height: 90vh;
@@ -88,7 +88,7 @@ nav{
 }
 /**********shoes**********/
 .shoes{
-    background-image: url(/img/shoes-img.png);
+    background-image: url(.../img/shoes-img.png);
     height: 60vh;
     background-position: center;
 }
